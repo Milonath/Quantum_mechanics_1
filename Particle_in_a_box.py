@@ -46,7 +46,7 @@ slider_b  = Slider(ax_b,  'b (demi-largeur)', 0.1, 5.0, valinit=b0)
 slider_c1 = Slider(ax_c1, 'c₁', -2.0, 2.0, valinit=c1_0)
 slider_c2 = Slider(ax_c2, 'c₂', -2.0, 2.0, valinit=c2_0)
 
-def update(_):
+def update(val):
     b  = slider_b.val
     c1 = slider_c1.val
     c2 = slider_c2.val
