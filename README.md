@@ -1,23 +1,15 @@
 # Quantum Mechanics 1
 
-Interactive Python models illustrating basic quantum mechanics principles: infinite square wells, hydrogen-like atomic orbitals, and finite potential well quantization.
+A collection of small Python simulations exploring core concepts in quantum mechanics — built with `numpy`, `scipy`, and `matplotlib`.
 
-## Contents
+The scripts cover:
+- **The infinite square well** (particle in a box), including wavefunction superposition
+- **The hydrogen atom**, visualizing radial wavefunctions and probability densities for different quantum numbers
+- **The finite square well**, graphically solving for quantized bound-state energies
 
-| Script | Description |
-|---|---|
-| [`Particle_in_a_box.py`](Particle_in_a_box.py) | Infinite square well ("particle in a box"). Plots the ground and first excited stationary states and their superposition, with the resulting probability density. Sliders control the well half-width `b` and the superposition coefficients `c1`, `c2`. |
-| [`QM_in_3D/radial_wavefunction.py`](QM_in_3D/radial_wavefunction.py) | Hydrogen-like atom radial wave functions `R_nl(r)` and radial probability density `P(r) = r²\|R_nl(r)\|²`, computed from the generalized Laguerre polynomials. Radio buttons select the quantum numbers `n`, `l` and nuclear charge `Z`. |
-| [`finite_potential_well/quantification_condition_for_even_functions.py`](finite_potential_well/quantification_condition_for_even_functions.py) | Plots the transcendental quantization condition for the even bound states of a finite square well, used to graphically locate allowed energy levels. |
+Each script is self-contained and opens an interactive plot with sliders or buttons to explore how the physics changes with different parameters.
 
 ## Requirements
-
-- Python 3
-- `numpy`
-- `scipy`
-- `matplotlib`
-
-Install with:
 
 ```bash
 pip install numpy scipy matplotlib
@@ -25,10 +17,8 @@ pip install numpy scipy matplotlib
 
 ## Usage
 
-Each script is standalone and opens an interactive `matplotlib` window:
+Run any script directly with Python, e.g.:
 
 ```bash
 python Particle_in_a_box.py
-python QM_in_3D/radial_wavefunction.py
-python finite_potential_well/quantification_condition_for_even_functions.py
 ```
