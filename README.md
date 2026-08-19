@@ -9,16 +9,4 @@ The scripts cover:
 
 Each script is self-contained and opens an interactive plot with sliders or buttons to explore how the physics changes with different parameters.
 
-## Requirements
 
-```bash
-pip install numpy scipy matplotlib
-```
-
-## Usage
-
-Run any script directly with Python, e.g.:
-
-```bash
-python Particle_in_a_box.py
-```
